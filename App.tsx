@@ -12,7 +12,7 @@ const App: React.FC = () => {
             className="h-16 w-auto [filter:brightness(0)_invert(1)]"
           />
         </div>
-        <p className="text-md text-white/80 mb-8">
+        <p className="text-lg font-light text-white/80 mb-8">
           Delivering innovative, high-quality food solutions blending tradition, taste, and technology for modern consumers.
         </p>
         <div className="flex flex-col space-y-4">
