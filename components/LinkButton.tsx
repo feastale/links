@@ -4,10 +4,11 @@ interface LinkButtonProps {
   href: string;
   children: React.ReactNode;
   iconSrc?: string;
+  icon?: React.ReactNode;
   hoverClass?: string;
 }
 
-export const LinkButton: React.FC<LinkButtonProps> = ({ href, children, iconSrc, hoverClass }) => {
+export const LinkButton: React.FC<LinkButtonProps> = ({ href, children, iconSrc, icon, hoverClass }) => {
   return (
     <a
       href={href}
@@ -15,6 +16,11 @@ export const LinkButton: React.FC<LinkButtonProps> = ({ href, children, iconSrc,
       rel="noopener noreferrer"
       className={`group flex items-center justify-center w-full px-6 py-3 bg-white/10 border border-white/20 rounded-lg text-lg font-semibold text-white backdrop-blur-sm transition-all duration-300 ease-in-out hover:shadow-lg hover:scale-105 ${hoverClass || ''}`}
     >
+      {icon && (
+        <div className="mr-3 transition-transform duration-300 group-hover:rotate-12">
+          {icon}
+        </div>
+      )}
       {iconSrc && (
         <img 
           src={iconSrc} 
