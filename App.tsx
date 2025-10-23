@@ -1,6 +1,5 @@
 import React from 'react';
 import { LinkButton } from './components/LinkButton';
-import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 const App: React.FC = () => {
   return (
@@ -17,27 +16,6 @@ const App: React.FC = () => {
           Delivering innovative, high-quality food solutions blending tradition, taste, and technology for modern consumers.
         </p>
         <div className="flex flex-col space-y-4">
-          <LinkButton 
-            href="#"
-            icon={<FaGithub className="h-6 w-6" />}
-            hoverClass="hover-github"
-          >
-            GitHub
-          </LinkButton>
-          <LinkButton 
-            href="#"
-            icon={<FaTwitter className="h-6 w-6" />}
-            hoverClass="hover-twitter"
-          >
-            Twitter
-          </LinkButton>
-          <LinkButton 
-            href="#"
-            icon={<FaLinkedin className="h-6 w-6" />}
-            hoverClass="hover-linkedin"
-          >
-            LinkedIn
-          </LinkButton>
           <LinkButton 
             href="http://www.feastale.com"
             iconSrc="https://files.catbox.moe/yocjun.png"
